@@ -1,0 +1,111 @@
+{
+  "info": {
+    "_postman_id": "23e8dfa8-0895-4fee-a1e2-ed71e017304d",
+    "name": "My Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get lessons",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/lessons",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["lessons"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get user",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/user",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["user"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Checkout",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"John\",\r\n    \"phone\": \"085564654894894\",\r\n    \"items\": [\r\n        {\r\n            \"_id\": \"620d0f19d898f946929546f2\",\r\n            \"space\": 1\r\n        },\r\n        {\r\n            \"_id\": \"620d0f19d898f946929546f3\",\r\n            \"space\": 1\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/checkout",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["checkout"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update inventory",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/lessons/620e1fab6349b2e2ba9802e3",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["lessons", "620e1fab6349b2e2ba9802e3"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
